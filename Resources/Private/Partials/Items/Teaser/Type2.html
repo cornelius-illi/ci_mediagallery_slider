@@ -1,0 +1,23 @@
+<f:if condition="{settings.onreadyjs}">
+	<f:then>
+		<f:if condition="{settings.onreadyjs} == {hook.colorbox}">
+			<div class="mediagallery-teaser mediagallery-teaser-image">
+			<a href="{f:uri.image(src: galleryItem.publicUrl, maxWidth: settings.single.image.width, maxHeight: settings.single.image.height)}" class="tx-mediagallery-lightbox tx-mediagallery-lightbox-{fileCollection.identifier} {f:if(condition: settings.allowDownload, then: 'lightbox-allowDownload')}" rel="lightbox[fileCollection.identifier]" title="{galleryItem.title} {galleryItem.properties.name}" rel="tx-mediagallery-{fileCollection.identifier}">
+				<f:image src="{galleryItem.publicUrl}" alt="{galleryItem.alternative}" title="{galleryItem.title}" height="{settings.gallery.image.height}" width="{settings.gallery.image.width}" />
+			</a>
+			</div>
+		</f:if>
+		<f:if condition="{settings.onreadyjs} == {hook.slider}">
+			<a href="{f:uri.image(src: galleryItem.publicUrl, maxWidth: settings.single.image.width, maxHeight: settings.single.image.height)}" class="tx-mediagallery-lightbox tx-mediagallery-lightbox-{fileCollection.identifier} {f:if(condition: settings.allowDownload, then: 'lightbox-allowDownload')}" rel="lightbox[fileCollection.identifier]" title="{galleryItem.title} {galleryItem.properties.name}" rel="tx-mediagallery-{fileCollection.identifier}">
+				<f:image src="{galleryItem.publicUrl}" alt="{galleryItem.alternative}" title="{galleryItem.title}" width="450" />
+			</a>
+		</f:if>	
+	</f:then>
+	<f:else>
+		<div class="mediagallery-teaser mediagallery-teaser-image">
+		<f:link.action action="showImage" arguments="{singleItemIndex: itemIterator.index, fileCollectionUid: fileCollection.identifier}">
+			<f:image src="{galleryItem.publicUrl}" alt="{galleryItem.alternative}" title="{galleryItem.title}" height="{settings.gallery.image.height}" width="{settings.gallery.image.width}" />
+		</f:link.action>
+		</div>
+	</f:else>
+</f:if>

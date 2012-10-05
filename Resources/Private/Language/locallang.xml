@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Media Gallery extension in the Frontend</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="label">Gallery</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="label">Überblick</label>
+		</languageKey>
+	</data>
+</T3locallang>

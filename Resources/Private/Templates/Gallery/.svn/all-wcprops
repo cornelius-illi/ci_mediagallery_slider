@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/TYPO3v4/Extensions/!svn/ver/56074/media_gallery/trunk/Resources/Private/Templates/Gallery
+END
+ShowGallery.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/TYPO3v4/Extensions/!svn/ver/56074/media_gallery/trunk/Resources/Private/Templates/Gallery/ShowGallery.html
+END
+ShowImage.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/TYPO3v4/Extensions/!svn/ver/54514/media_gallery/trunk/Resources/Private/Templates/Gallery/ShowImage.html
+END
+List.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/TYPO3v4/Extensions/!svn/ver/54514/media_gallery/trunk/Resources/Private/Templates/Gallery/List.html
+END
